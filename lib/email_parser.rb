@@ -12,11 +12,5 @@ class EmailAddressParser
   end
 
   def parse
-    # @email.split(", " && " ")
-    if @email.any?(",")
-      @email.split(", ")
-    else
-      @email.split(" ")
-    end
-  end
+     @email.split(", " && " ")
 end
