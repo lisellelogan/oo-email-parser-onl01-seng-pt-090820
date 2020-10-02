@@ -12,6 +12,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email.split(/[\s,]+/)
+    parsed_email = @email.split(/[\s,]+/)
+    parsed_email.uniq
   end
 end
